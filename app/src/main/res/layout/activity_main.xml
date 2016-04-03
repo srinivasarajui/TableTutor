@@ -8,16 +8,17 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="srini.tabletutor.MainActivity"
-    android:background="#cddc39">
+    android:background="@color/primary_material_dark">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/main_page_title"
         android:textColor="@android:color/white"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="24sp" />
+        android:layout_alignParentTop="false"
+        android:textSize="24sp"
+        android:layout_alignParentLeft="false"
+        android:layout_centerHorizontal="true" />
 
     <LinearLayout
         android:orientation="vertical"
@@ -33,91 +34,101 @@
             android:layout_gravity="center_horizontal"
             android:weightSum="100">
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="100">
+
             <LinearLayout
                 android:orientation="vertical"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="left">
+                android:gravity="left"
+                android:layout_weight="50">
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="New Button"
+                    android:text="1 Table"
                     android:id="@+id/button1" />
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="2 Table"
                     android:id="@+id/button2" />
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="3 Table"
                     android:id="@+id/button3" />
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="4 Table"
                     android:id="@+id/button4" />
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="5 table"
                     android:id="@+id/button5" />
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="New Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="6 Table"
                     android:id="@+id/button6" />
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="vertical"
-                android:layout_width="fill_parent"
-                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:gravity="right"
-
+                android:layout_weight="50"
                 >
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="New Button"
+                    android:text="7 Table"
                     android:id="@+id/button7" />
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="New Button"
+                    android:text="8 Table"
                     android:id="@+id/button8" />
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="New Button"
+                    android:text="9 Table"
                     android:id="@+id/button9" />
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="New Button"
+                    android:text="10 Table"
                     android:id="@+id/button10" />
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="New Button"
+                    android:text="11 Table"
                     android:id="@+id/button11" />
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="New Button"
+                    android:text="12 Table"
                     android:id="@+id/button12" />
 
             </LinearLayout>
@@ -127,7 +138,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="EXIT"
-            android:id="@+id/button"
+            android:id="@+id/btnExit"
             android:layout_gravity="center_horizontal|bottom" />
     </LinearLayout>
 </RelativeLayout>
